@@ -1,0 +1,1 @@
+{"rsync":{"/vagrant":{"type":"rsync","guestpath":"/vagrant","hostpath":"/home/astralinux.ru/skrivosheev/Desktops/Desktop1/OTUS/Otus_Unit_24_VLAN","disabled":false,"__vagrantfile":true,"owner":"vagrant","group":"vagrant"}}}
