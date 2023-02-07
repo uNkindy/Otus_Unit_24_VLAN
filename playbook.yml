@@ -31,8 +31,6 @@
         type: bond
         conn_name: 'bond0'
         ip4: '{{ central_bondip }}'
-        # mode: 'active-backup'
-        # primary: 'eth1'
         state: present
         autoconnect: true
       when:
@@ -50,8 +48,9 @@
         - eth2
 
 - name: Vlans config
-  hosts: centralRouter,Servers
+  hosts: centralRouter, servers
   become: true
+  gather_facts: true
   vars: 
     - ip_client: '10.10.10.1/24'
     - ip_server: '10.10.10.254/24'
